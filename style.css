@@ -1,0 +1,124 @@
+
+/* Fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffcc00, #ff6600, #ff0066, #9900cc, #0066ff);
+    background-size: 400% 400%;
+    animation: gradientBG 10s infinite;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animação do fundo */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Cabeçalho */
+.profile {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-title {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #ffcc00;
+}
+
+.profile-subtitle {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* Reflexão */
+.reflection {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.reflection h2 {
+    color: #ff6600;
+}
+
+.reflection p {
+    color: #555;
+}
+
+/* Quiz */
+.quiz {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quiz h2 {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #0066ff;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.option:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
+}
+
+.option.correct {
+    background-color: #28a745;
+}
+
+.option.wrong {
+    background-color: #dc3545;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    color: #ffcc00;
+    font-size: 1em;
+}
